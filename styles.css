@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url("images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.logo-image {
+    margin-bottom: 20px;
+}
+
+.logo-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8B4513;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8B4513; /* Brown color */
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+/* User icon */
+.input-container i.fa-user {
+    left: 15px;
+}
+
+/* Lock icon */
+.input-container i.fa-lock {
+    left: 15px;
+}
+
+/* Eye icon */
+.input-container i#togglePassword {
+    right: 15px;
+    cursor: pointer;
+    left: auto;
+}
+
+.input-container i#togglePassword:hover {
+    color: #8B4513;
+}
+
+.input-container input {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px 45px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+    border-color: #8B4513;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #A0522D;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 15px;
+    color: #ff0000;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 30px;
+        margin: 20px;
+        max-width: 350px;
+    }
+    
+    .logo-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .login-box h2 {
+        font-size: 24px;
+    }
+}
